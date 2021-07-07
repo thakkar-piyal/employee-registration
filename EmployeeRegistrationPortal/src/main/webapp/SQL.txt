@@ -1,0 +1,14 @@
+create table employee(eid int(10) primary key auto_increment,ename varchar(30),eemail varchar(30),epassword varchar(255),eage int(10),ehobbies varchar(255));
+
+create table employee(eid serial primary key,ename varchar(30),eemail varchar(30),epassword varchar(255),eage int);
+insert into employee(eid,ename,eemail,epassword,eage) values(2,'shreya','shreya123@gmail.com','acharya',21);
+
+create table admin(aid int primary key,aname varchar(30),aemail varchar(30),apassword varchar(30));
+
+insert into admin(aid,aname,aemail,apassword) values(1,'Alexa','alexa123@gmail.com','Alexa123');
+insert into admin(aid,aname,aemail,apassword) values(2,'Siri','siri123@gmail.com','Siri123');
+
+ec2-54-147-93-73.compute-1.amazonaws.com
+d3vob6nleadnvg
+vxsdfiiejcyvyh
+a9ccd3ba600147f26b0f839eca8c6ad888bd9d15a858f73aec3f62aa4923f184
