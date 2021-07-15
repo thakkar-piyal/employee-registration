@@ -1,0 +1,5 @@
+create table city (cid int primary key auto_increment, cname varchar(30));
+
+create table temprature (tid int primary key auto_increment,cid int, FOREIGN KEY(cid) REFERENCES city(cid), mornTemp int, eveTemp int, nightTemp int, average float);
+
+select city.cid,city.cname,temprature.mornTemp,temprature.eveTemp from city natural join temprature where city.cid=temprature.cid;
